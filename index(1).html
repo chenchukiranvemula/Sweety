@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Madhu Priya ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     CINEMATIC LOVE LOCK
+========================= -->
+<div id="lockScreen">
+    <div class="lockAtmosphere"></div>
+    <div class="lockStars"></div>
+    <div class="lockVignette"></div>
+    <div id="lockPetalLayer"></div>
+
+    <div class="lockContainer">
+        <div class="lockTopLine">✦ ✦ ✦</div>
+
+        <h1 class="lockTitle">🌹 Our Secret Memory ❤️</h1>
+
+        <p class="lockSub">
+            Some memories are too precious to protect
+            with an ordinary password...
+        </p>
+
+        <p class="lockSub2">
+            Unlock this journey by remembering
+            our special day ❤️
+        </p>
+
+        <div class="cinematicLock">
+            <div class="lockHalo"></div>
+            <div class="lockOrbit orbitOne"></div>
+            <div class="lockOrbit orbitTwo"></div>
+            <div class="heartLockVisual">♥</div>
+            <div class="keyVisual">🗝️</div>
+        </div>
+
+        <div class="calendarGlass">
+            <div class="pickerTitle">📅 Choose Our Special Date</div>
+
+            <div class="pickerRow">
+                <div class="pickerUnit">
+                    <span>DAY</span>
+                    <select id="dayPicker"></select>
+                </div>
+                <div class="pickerSlash">/</div>
+                <div class="pickerUnit">
+                    <span>MONTH</span>
+                    <select id="monthPicker"></select>
+                </div>
+                <div class="pickerSlash">/</div>
+                <div class="pickerUnit">
+                    <span>YEAR</span>
+                    <select id="yearPicker"></select>
+                </div>
+            </div>
+        </div>
+
+        <button id="unlockBtn">
+            ❤️ Unlock Our Journey ❤️
+        </button>
+
+        <div id="attemptBox">
+            Attempts Left ❤️
+            <span id="chanceCount">5</span>
+        </div>
+
+        <div id="roseArea"></div>
+        <div id="timerArea"></div>
+    </div>
+</div>
+
+<!-- Cinematic transition layer -->
+<div id="roseTransition" aria-hidden="true">
+    <div class="roseCurtainGlow"></div>
+    <div id="roseBurst"></div>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="Birthdaysong.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="chapter9Song">
+    <source src="Ammadu2.mp3" type="audio/mpeg">
+</audio>
+
+<section id="welcome">
+    <div class="welcome-film">
+        <div class="welcome-light"></div>
+        <div class="welcome-particles"></div>
+        <div class="welcome-box">
+            <h1>🎂 Happy Birthday</h1>
+            <h2>AMMADU❤️</h2>
+            <p>Today isn't just another day... It's the day the most beautiful girl came into this world.</p>
+            <button id="startBtn">Start The Journey ❤️</button>
+        </div>
+    </div>
+</section>
+
+<div id="website">
+
+<!-- Chapter 1 -->
+<section class="chapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">01</div>
+        <h1>🌸 Chapter 1</h1>
+        <h2>Welcome My Love ❤️</h2>
+        <p>
+            Every second with you is precious.
+            Today is all about celebrating YOU.
+            Happy Birthday Princess ❤️
+        </p>
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 2 -->
+<section class="chapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">02</div>
+        <h1>💕 Chapter 2</h1>
+        <h2>Reasons I Love You ❤️</h2>
+        <div class="cards">
+            <div class="card">🥰<br><br>Your Beautiful Smile</div>
+            <div class="card">🌸<br><br>Your Caring Nature</div>
+            <div class="card">💖<br><br>Your Kind Heart</div>
+            <div class="card">😍<br><br>Everything About You</div>
+        </div>
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 3 -->
+<section class="chapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">03</div>
+        <h1>🌹 Chapter 3</h1>
+        <h2>Our Journey ❤️</h2>
+        <div class="timeline">
+            <div class="timeBox">🌸<p>The day we met became one of my favorite memories.</p></div>
+            <div class="timeBox">💖<p>Every conversation brought us closer.</p></div>
+            <div class="timeBox">🥰<p>You became my happiness every single day.</p></div>
+            <div class="timeBox">❤️<p>Today I just want to see you smiling.</p></div>
+        </div>
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 4 -->
+<section class="chapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">04</div>
+        <h1>🎁 Chapter 4</h1>
+        <h2>Tap the Gifts ❤️</h2>
+        <div class="giftContainer">
+            <div class="gift" data-message="You're the best gift in my life ❤️">
+                <div class="giftIcon">🎁</div>
+                <div class="giftHeart">❤️</div>
+            </div>
+            <div class="gift" data-message="May all your dreams come true 🌸">
+                <div class="giftIcon">🎁</div>
+                <div class="giftHeart">💖</div>
+            </div>
+            <div class="gift" data-message="I Love You Forever ❤️">
+                <div class="giftIcon">🎁</div>
+                <div class="giftHeart">💜</div>
+            </div>
+        </div>
+        <p id="giftMessage"></p>
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 5 -->
+<section class="chapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">05</div>
+        <h1>📸 Chapter 5</h1>
+        <h2>Ur Memories ❤️</h2>
+        <div class="gallery">
+            <div class="photo"><img src="Madhu1.jpg" alt=""><p>ur my heart ❤️</p></div>
+            <div class="photo"><img src="Madhu2.jpg" alt=""><p>ur smile makes my day brighter ❤️</p></div>
+            <div class="photo"><img src="Madhu3.jpg" alt=""><p>ur my favorite ❤️</p></div>
+        </div>
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 6 -->
+<section class="chapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">06</div>
+        <h1>💖 Chapter 6</h1>
+        <h2>My Promises To You</h2>
+        <div class="cards">
+            <div class="card">❤️ I'll always respect you.</div>
+            <div class="card">🌹 I'll always support your dreams.</div>
+            <div class="card">🥰 I'll always make you smile.</div>
+            <div class="card">♾️ I'll always love you.</div>
+        </div>
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 7 -->
+<section class="chapter cakeChapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">07</div>
+        <h1>🎂 Chapter 7</h1>
+        <h2>Make A Birthday Wish ❤️</h2>
+
+        <div class="realCake" id="realCake">
+            <div class="cakeGlow"></div>
+
+            <div class="candles">
+                <div class="candle" data-candle="1"><span class="flame"></span></div>
+                <div class="candle" data-candle="2"><span class="flame"></span></div>
+                <div class="candle" data-candle="3"><span class="flame"></span></div>
+                <div class="candle" data-candle="4"><span class="flame"></span></div>
+                <div class="candle" data-candle="5"><span class="flame"></span></div>
+            </div>
+
+            <div class="cakeTop">
+                <div class="creamLine"></div>
+                <div class="berry berryOne"></div>
+                <div class="berry berryTwo"></div>
+                <div class="berry berryThree"></div>
+            </div>
+            <div class="cakeBody">
+                <div class="cakeLayer cakeLayerOne"></div>
+                <div class="cakeLayer cakeLayerTwo"></div>
+                <div class="cakeLayer cakeLayerThree"></div>
+            </div>
+            <div class="cakePlate"></div>
+        </div>
+
+        <p>
+            Close your eyes...
+            Make a beautiful wish...
+            May every dream of yours come true. ✨
+        </p>
+
+        <button id="cakeBtn">Blow Candles 🕯️</button>
+        <div id="wishReveal"></div>
+        <div id="fireworks"></div>
+
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 8 -->
+<section class="chapter">
+    <div class="chapterScene letterScene">
+        <div class="sceneNumber">08</div>
+        <h1>💌 Chapter 8</h1>
+        <h2>My Letter To You ❤️</h2>
+
+        <div class="envelopeBox">
+            <div class="envelope" id="openLetter">
+                <div class="waxSeal">❤️</div>
+                💌
+                <p>Tap to Open My Letter ❤️</p>
+            </div>
+        </div>
+
+        <div class="letter" id="letterBox" style="display:none;">
+            <h3>My Dearest Madhu Priya ❤️</h3>
+            <p id="letterText">
+My Dearest Madhu Priya ❤️
+
+Happy Birthday to the most beautiful soul I have ever known.
+
+Every moment with you has become one of the most precious memories of my life.
+
+Your smile brightens even my darkest days.
+
+Your kindness reminds me that beautiful hearts still exist.
+
+Whenever life feels difficult, just thinking about you fills my heart with peace.
+
+I don't know what tomorrow brings...
+
+But I do know one thing...
+
+I will always pray for your happiness.
+
+May every dream you dream become reality.
+
+May your beautiful smile never fade.
+
+Thank you for making life more beautiful just by being yourself.
+
+You'll always have a special place in my heart...........
+        These are the words I want to tell you. Please listen carefully.
+I don't have the patience to tell lies and make you believe them.
+I also don't have the heart to deceive you by lying. When you're with me, I feel happiness. When you're far away, I feel nothing but sadness.
+        That's the only truth in my heart.
+I learned how to love you...
+Remember these words for the rest of your life: My love is dedicated only to you. 💗
+
+❤️ Happy  Birthday Princess ❤️
+Forever Yours,
+Hubby ❤️
+            </p>
+        </div>
+
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 9 -->
+<section class="chapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">09</div>
+        <h1>🎵 Chapter 9</h1>
+        <h2>Special Song for u ❤️</h2>
+
+        <div class="musicPlayer">
+            <div class="vinylStage">
+                <div class="vinyl" id="vinyl">
+                    <span class="vinylLabel">❤️</span>
+                </div>
+                <div class="recordLight"></div>
+            </div>
+
+            <p class="songText">
+                Every heartbeat reminds me of you... ❤️
+                Whenever this song plays,
+                I remember every beautiful moment with you.
+            </p>
+
+            <div class="equalizer">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <button id="musicBtn">▶ Play The Song ❤️</button>
+        </div>
+
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 10 -->
+<section class="chapter celebrationChapter">
+    <div class="chapterScene">
+        <div class="sceneNumber">10</div>
+        <h1>🎆 Chapter 10</h1>
+        <h2>It's Celebration Time ❤️</h2>
+        <h3>🎈🎈 HAPPY 17TH BIRTHDAY 🎈🎈</h3>
+        <p>
+            May your smile shine brighter than the stars.
+            May every wish come true.
+            May happiness always stay with you.
+        </p>
+
+        <div id="celebrationArea"></div>
+        <div id="celebrationFireworks"></div>
+
+        <h1 id="happyGlow">🎉 HAPPY BIRTHDAY AMMADU 🎉</h1>
+
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 11 -->
+<section class="chapter finalChapter">
+    <div class="chapterScene finalScene">
+        <div class="sceneNumber">11</div>
+        <h1>👑 Chapter 11</h1>
+        <h2>Always My Princess ❤️</h2>
+        <p>
+            You are one of the most beautiful parts of my life.
+            Thank you for every smile, every laugh, and every wonderful memory.
+            No matter how many birthdays pass, I'll always wish the best for you.
+            Never stop smiling because your smile makes the world brighter.
+            ❤️
+        </p>
+        <button class="nextBtn">Next ➜</button>
+    </div>
+</section>
+
+<!-- Chapter 12 -->
+<section class="chapter finalChapter foreverChapter">
+    <div class="finalGlowHeart">❤️</div>
+    <div class="chapterScene finalScene">
+        <div class="sceneNumber">12</div>
+        <h1>❤️ The End ❤️</h1>
+        <h2>Forever & Always</h2>
+        <h1>Happy Birthday Madhu Priya 🎂❤️</h1>
+        <p>
+            Thank you for reading this little journey.
+            This website was made especially for you.
+            I hope today becomes one of your happiest memories.
+            Stay blessed.
+            Stay happy.
+            Keep smiling.
+            ❤️ I Love You ❤️
+            Forever Yours,
+            (Hubby)
+        </p>
+        <button id="restart">Replay Journey 🔄</button>
+    </div>
+</section>
+
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
